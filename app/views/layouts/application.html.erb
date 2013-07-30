@@ -1,14 +1,116 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Tricarerails</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+	  <%= javascript_include_tag "application" %>
+	  <%= csrf_meta_tags %>
+    <title>TRICARE Health</title>
 
-<%= yield %>
+    <!-- FontAwesome -->
 
-</body>
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700' rel='stylesheet' type='text/css'>
+
+  </head>
+
+  <body>
+
+    <!-- Wrap all page content here -->
+    <div id="wrap">
+
+      <!-- Fixed navbar -->
+      <div class="navbar navbar-fixed-top">
+        <div class="container">
+
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+      <!-- Be sure to leave the brand out there if you want it shown -->    
+          <a class="navbar-brand" href="#">Lighthouse</a>
+
+      <!-- Everything you want hidden at 940px or less, place within here -->    
+          <div class="nav-collapse collapse">
+
+      <!-- .nav, .navbar-search, .navbar-form, etc -->    	
+            <ul class="nav navbar-nav">
+            	<li><div id="spacer">.</div></li>
+              <li><a href="http://localhost:3000/dashboard"><center><i class="icon-dashboard icon-2x"></i><br><center></a></li>
+              <li><div id="spacer">.</div></li>
+              <li><a href="http://localhost:3000/team"><center><i class="icon-group icon-2x"></i><br><p id="graytext">hi</p><center></a></li>
+              <li><div id="spacer">.</div></li>
+              <li><a href="http://localhost:3000/lantern"><center><i class="icon-h-sign icon-2x"></i><br><center></a></li>
+			  <li><div id="spacer">.</div></li>
+              <li><a href="http://localhost:3000/newevent"><center><i class="icon-plus icon-2x"></i><br><center></a></li>
+			  <li><div id="spacer">.</div></li>
+			 </ul>
+			<ul class="nav pull-right">
+			  <li><a href="http://localhost:3000/newevent"><center><i class="icon-user icon-2x"></i><br><center></a></li>
+			</ul>
+			 
+              <!--<li><%= link_to "Home", root_path %></li>
+              <li><%= link_to "Lantern Room", lantern_path %></li>
+               <li><%= link_to "How It Works", howitworks_path %></li>
+
+              
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>-->
+          </div>
+          <!--/.nav-collapse -->
+        
+        </div>
+      </div>
+
+      <!-- Begin page content -->
+      <div class="container">
+        
+          <%= yield %>
+        </div>
+        
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+       	<address>
+		  <strong>TRICARE Health</strong><br>
+		  7700 Arlington Blvd.<br>
+		  Falls Church, VA 22042<br>
+		  <abbr title="Phone">P:</abbr> (123) 456-7890
+		</address>
+		<address>
+		  <strong>Michael Sanchez</strong><br>
+		  <a href="mailto:#">michael.sanchez@tma.osd.mil</a>
+		</address>
+      </div>
+    </div>
+ <!-- JavaScript plugins (requires jQuery) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="javascripts/bootstrap.min.js"></script>
+
+    <!-- Optionally enable responsive features in IE8 -->
+    <script src="javascripts/respond.js"></script>
+  </body>
 </html>
