@@ -1484,3 +1484,13 @@ a .icon-flip-vertical:before {
   text-decoration: none;
   color: #828282;
 }
+.icon-on {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: green;
+}
+.icon-off {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: red;
+}

@@ -8,6 +8,10 @@ get 'team' => 'pages#team'
 get 'newhealthfair' => 'pages#newhealthfair'
 get 'newworkshop' => 'pages#newworkshop'
 get 'companyinfo' => 'pages#companyinfo'
+get 'Progress_Status' => 'pages#Progress_Status'
+get 'My_Account' => 'pages#My_Account'
+get 'rep_view' => 'pages#rep_view'
+get 'rep_view_pending' => 'pages#rep_view_pending'
 
   root :to => 'pages#home'
   # The priority is based upon order of creation:

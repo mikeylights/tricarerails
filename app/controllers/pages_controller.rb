@@ -29,4 +29,16 @@ class PagesController < ApplicationController
   def companyinfo
   end
   
+  def Progress_Status
+  end
+
+  def My_Account    
+  end
+
+  def rep_view 
+  end
+
+  def rep_view_pending    
+  end
+  
 end
